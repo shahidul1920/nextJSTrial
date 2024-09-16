@@ -1,5 +1,5 @@
+import Link from "next/link";
 import "./globals.css";
-
 
 export const metadata = {
   title: "Haggu moniya tiniya",
@@ -10,6 +10,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      <Link href="/">
+        <button className="btn">Home</button>
+      </Link>
+
+      <Link href="/about">
+        <button className="btn btn-primary">About</button>
+      </Link>
         {children}
       </body>
     </html>
